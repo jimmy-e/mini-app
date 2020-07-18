@@ -1,0 +1,55 @@
+{
+  "presets": [
+    "@babel/preset-react",
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "node": "current"
+        }
+      }
+    ]
+  ],
+  "plugins": [
+    ["babel-plugin-transform-builtin-extend", {
+      "globals": ["Error", "Array"],
+      "approximate": true
+    }],
+    ["module-resolver", {
+      "root": ["./src"],
+      "alias": {
+        "api": "./src/api/",
+        "app": "./src/spa/app/",
+        "assets": "./src/assets/",
+        "buttons": "./src/spa/shared/buttons/",
+        "cards": "./src/spa/shared/cards/",
+        "context": "./src/context/",
+        "fallbacks": "./src/spa/shared/fallbacks/",
+        "forms": "./src/spa/shared/forms/",
+        "framerMotion": "./src/thirdParty/framerMotion/",
+        "header": "./src/spa/app/layout/header/",
+        "hooks": "./src/hooks/",
+        "icons": "./src/spa/shared/icons/",
+        "inputs": "./src/spa/shared/inputs/",
+        "landing": "./src/spa/landing/",
+        "layout": "./src/spa/app/layout/",
+        "lotty": "./src/thirdParty/lotty/",
+        "mockData": "./src/mockData/",
+        "modals": "./src/spa/shared/modals/",
+        "navigation": "./src/spa/app/layout/navigation/",
+        "pages": "./src/spa/app/pages/",
+        "portal": "./src/spa/shared/portal/",
+        "routing": "./src/spa/app/routing/",
+        "schema": "./src/server/schema/",
+        "server": "./src/server/",
+        "shared": "./src/spa/shared/",
+        "storybook": "./src/thirdParty/storybook/",
+        "styles": "./src/styles/",
+        "tags": "./src/spa/shared/tags/",
+        "typography": "./src/spa/shared/typography/",
+        "types": "./src/types/",
+        "utils": "./src/utils/"
+      }
+    }]
+  ]
+}

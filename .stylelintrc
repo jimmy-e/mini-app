@@ -1,0 +1,51 @@
+{
+  "rules": {
+    "at-rule-semicolon-space-before": "never",
+    "at-rule-semicolon-newline-after": "always",
+    "block-closing-brace-empty-line-before": "never",
+    "block-closing-brace-newline-after": "always",
+    "block-no-empty": true,
+    "block-opening-brace-newline-after": "always",
+    "color-hex-case": "upper",
+    "color-named": "never",
+    "color-no-invalid-hex": true,
+    "declaration-bang-space-after": "never",
+    "declaration-bang-space-before": "always",
+    "declaration-block-single-line-max-declarations": 1,
+    "declaration-block-no-duplicate-properties": true,
+    "declaration-colon-space-after": "always",
+    "font-family-no-missing-generic-family-keyword": true,
+    "function-calc-no-invalid": true,
+    "function-calc-no-unspaced-operator": true,
+    "indentation": 2,
+    "length-zero-no-unit": true,
+    "max-line-length": 100,
+    "media-feature-colon-space-after": "always",
+    "no-duplicate-at-import-rules": true,
+    "no-duplicate-selectors": true,
+    "no-empty-first-line": true,
+    "no-eol-whitespace": true,
+    "no-extra-semicolons": true,
+    "number-leading-zero": "always",
+    "property-case": "lower",
+    "property-no-unknown": true,
+    "selector-pseudo-class-no-unknown": [
+      true,
+      { "ignorePseudoClasses": ["global"] }
+    ],
+    "selector-pseudo-element-no-unknown": [
+      true,
+      { "ignorePseudoElements": ["global"] }
+    ],
+    "selector-type-case": [
+      "lower",
+      { "ignoreTypes": ["textArea"] }
+    ],
+    "selector-type-no-unknown": true,
+    "unit-case": "lower",
+    "unit-no-unknown": true,
+    "unit-blacklist": ["em", "px"],
+    "unit-whitelist": ["rem", "%", "s", "vw", "vh", "turn", "deg"],
+    "value-keyword-case": "lower"
+  }
+}
