@@ -1,25 +1,9 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const webpack = require('webpack');
-const Dotenv = require('dotenv-webpack');
 
 const DIST_DIR = path.resolve(__dirname, 'dist');
 const SRC_DIR = path.resolve(__dirname, 'src');
-
-let envFile;
-switch (process.env.NODE_ENV) {
-  case 'DEV':
-    envFile = 'dev.env';
-    break;
-  case 'PROD':
-    envFile = 'prod.env';
-    break;
-  case 'TEST':
-    envFile = 'test.env';
-    break;
-  default:
-    throw Error('Unknown NODE_ENV flag');
-}
 
 const entry = [
   'babel-polyfill',
@@ -128,9 +112,6 @@ const plugins = [
   }),
   new webpack.DefinePlugin({
     'process.env.INTERNAL': JSON.stringify(process.env.INTERNAL),
-  }),
-  new Dotenv({
-    path: `${__dirname}/${envFile}`,
   }),
 ];
 

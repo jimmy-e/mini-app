@@ -1,6 +1,10 @@
 {
   "main": "index.js",
   "scripts": {
+    "remove-dist": "rm -rf dist",
+    "copy-index": "cp src/index.html dist/index.html",
+    "webpack:dev": "webpack --config webpack.dev.js",
+    "build": "NODE_ENV=DEV npm-run-all remove-dist webpack:dev copy-index",
     "start": "NODE_ENV=DEV webpack-dev-server --config webpack.dev.js"
   },
   "license": "UNLICENSED",
