@@ -13,8 +13,6 @@ const LOGIN_USER = gql`
   mutation loginUser($email: String!, $password: String!) {
     loginUser(data: {email: $email, password: $password}) {
       id
-      firstName
-      lastName
       email
     }
   }
@@ -33,8 +31,8 @@ const App: React.FC = () => {
   const handleLogin = async (): Promise<void> => {
     await loginUser({
       variables: {
-        email: 'john@gmail.com',
-        password: 'abc',
+        email: 'jimmy@gmail.com',
+        password: 'Ji$794658',
       },
     });
   };
