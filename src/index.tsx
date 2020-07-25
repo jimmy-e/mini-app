@@ -19,8 +19,6 @@ const link = createHttpLink({
   credentials: 'include'
 });
 
-console.log('including');
-
 const client = new ApolloClient({
   link,
   cache: new InMemoryCache(),
