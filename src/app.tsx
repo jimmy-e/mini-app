@@ -31,7 +31,7 @@ const App: React.FC = () => {
   const handleLogin = async (): Promise<void> => {
     await loginUser({
       variables: {
-        email: 'jimmy@gmail.com',
+        email: 'dad@gmail.com',
         password: 'Ji$794658',
       },
     });
