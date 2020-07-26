@@ -12,7 +12,7 @@ import { getMainDefinition } from 'apollo-utilities';
 import { split } from 'apollo-link';
 import App from './app';
 
-const URI = 'https://mybord-server-prod.herokuapp.com/graphql';
+const URI = 'https://mbh-server-dev-jimmy.herokuapp.com/graphql';
 
 const link = createHttpLink({
   uri: URI,
